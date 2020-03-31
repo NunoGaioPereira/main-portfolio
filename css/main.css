@@ -198,7 +198,7 @@ footer .footer-content ul li a img {
 	width: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 	footer .footer-content {
 		display: flex;
 		flex-direction: column;
