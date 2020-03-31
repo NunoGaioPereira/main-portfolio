@@ -15,6 +15,7 @@ body {
 
 a {
 	color: #111;
+	color: #fff;
 }
 
 .container {
@@ -22,10 +23,19 @@ a {
 	margin: 0 auto;
 }
 
+.top-nav {
+	background-color: var(--footer-bg);
+}
+
 .nav-container {
 	display: flex;
 	justify-content: space-between;
-	padding: 30px 40px;
+	align-items: center;
+	padding: 20px 40px;
+}
+
+.nav-container .logo img {
+	width: 40px;
 }
 
 .nav-container ul {
@@ -116,7 +126,8 @@ a {
 	background-color: transparent;
 	color: #fff;
 	margin: 0 auto;
-	width: 160px;
+	width: 180px;
+	padding: 8px;
 	font-size: 18px;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
@@ -139,7 +150,16 @@ footer {
 
 footer .footer-content {
 	display: flex;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .footer-content p {
+	font-size: 15px;
+}
+
+footer .footer-content .footer-logo img {
+	width: 40px;
 }
 
 footer ul {
@@ -148,4 +168,9 @@ footer ul {
 
 footer ul li {
 	display: inline-block;
+	margin-left: 20px;
+}
+
+footer .footer-content ul li a img {
+	width: 20px;
 }
