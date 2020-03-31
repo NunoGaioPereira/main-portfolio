@@ -149,9 +149,31 @@ footer {
 }
 
 footer .footer-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*align-items: center;*/
+	text-align: center;
+	width: 100%;
+}
+
+footer .footer-content p {
+	display: inline-block;
+	float: left;
+	width: 33.33333%;
+	text-align: left;
+}
+
+footer .footer-content ul {
+	display: inline-block;
+	float: right;
+	width: calc(33.33333% - 20px);
+	text-align: right;
+}
+
+footer .footer-content a {
+	display: inline-block;
+	width: 33.33333%;
+	text-align: center;
 }
 
 footer .footer-content p {
@@ -164,6 +186,7 @@ footer .footer-content .footer-logo img {
 
 footer ul {
 	list-style: none;
+	margin-right: 20px;
 }
 
 footer ul li {
