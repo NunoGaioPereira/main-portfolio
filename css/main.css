@@ -158,6 +158,25 @@ a {
 	color: var(--main-color);
 }
 
+.portfolio {
+	text-align: center;
+	padding: 60px 40px;
+}
+
+.portfolio h3 {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.portfolio h3:after {
+	content: '';
+	display: block;
+	margin: 15px auto 15px;
+	width: 40px;
+	height: 3px;
+	background-color: var(--main-color);
+}
+
 .contact {
 	text-align: center;
 	padding: 60px 30px;
