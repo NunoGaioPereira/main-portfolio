@@ -74,6 +74,44 @@ a {
 	color: var(--main-color);
 }
 
+.contact {
+	text-align: center;
+	padding: 40px 30px;
+}
+
+.contact h3 {
+	font-weight: 600;
+	font-size: 25px;
+	color: #111;
+	position: relative;
+}
+
+.contact h3:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 3px;
+	background-color: var(--main-color);
+}
+
+.contact form {
+	max-width: 400px;
+	margin: 20px auto 0;
+}
+
+.contact form input, .contact form textarea {
+	width: 100%;
+	display: block;
+	margin: 10px 0;
+	padding: 10px;
+	border: 2px solid var(--main-color);
+}
+
+.contact form textarea {
+	height: 120px;
+}
+
 footer {
 	background-color: var(--footer-bg);
 	padding: 20px;
