@@ -197,3 +197,31 @@ footer ul li {
 footer .footer-content ul li a img {
 	width: 20px;
 }
+
+@media screen and (max-width: 500px) {
+	footer .footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .footer-content a {
+		order: 1;
+	}
+
+	footer .footer-content p {
+		order: 2;
+	}
+
+	footer .footer-content a, footer .footer-content p, footer .footer-content ul {
+		display: initial;
+		text-align: center;
+		margin: 10px 0;
+		float: none;
+		width: initial;
+	}
+	footer .footer-content ul li {
+		margin: 0 10px;
+	}
+}
