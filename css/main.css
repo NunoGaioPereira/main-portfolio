@@ -28,6 +28,7 @@ a {
 	/*background-color: var(--footer-bg);*/
 	position: fixed;
 	width: 100%;
+	transition: background-color 0.2s ease-in-out;
 }
 
 .nav-container {
@@ -180,6 +181,7 @@ a {
 .contact {
 	text-align: center;
 	padding: 60px 30px;
+	background-color: var(--light-gray);
 }
 
 .contact h3 {
@@ -205,9 +207,10 @@ a {
 .contact form input, .contact form textarea {
 	width: 100%;
 	display: block;
-	margin: 10px 0;
-	padding: 10px;
-	border: 2px solid #ccc;
+	margin: 15px 0;
+	padding: 14px 10px;
+	/*border: 2px solid #ccc;*/
+	border: none;
 }
 
 .contact form textarea {

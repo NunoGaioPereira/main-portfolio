@@ -42,9 +42,21 @@
 		cillum dolore eu fugiat nulla pariatur.</p>
 
 		<div class="services">
+			<div class="row">
+				<div class="col-container">
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
 			<!-- Branding, Development, Design, SEO, Marketing, Prints, Illustration -->
 		</div>
 
+	</section>
+	
+	<section class="mind">
+		<h3>Have a project in mind?</h3>
+		<p><a href="">Let's get started!</a></p>
 	</section>
 
 	<section class="portfolio">
@@ -56,10 +68,6 @@
 		<a href="">Contact me</a>
 	</section>
 
-	<section class="mind">
-		<h3>Have a project in mind?</h3>
-		<p><a href="">Let's get started!</a></p>
-	</section>
 
 	<section class="contact">
 		<h3>Contact me</h3>
@@ -82,6 +90,16 @@
 		</div>
 	</footer>
 
-	<script> </script>
+	<script> 
+		const nav = document.querySelector('.top-nav');
+		window.addEventListener('scroll', () => {
+		  // let y = 1 + (window.scrollY || window.pageYOffset) / 150
+		  // y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
+		  let y = 1 + window.scrollY;
+		  if(y > 100) {
+		  	nav.style.backgroundColor = "#111";
+		  }
+		})
+	</script>
 </body>
 </html>
