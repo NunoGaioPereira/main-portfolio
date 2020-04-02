@@ -18,6 +18,7 @@ body {
 a {
 	color: #111;
 	color: #fff;
+	text-decoration: none;
 }
 
 .container {
@@ -136,12 +137,18 @@ a {
 	background-color: var(--main-color);
 }
 
+.about p {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
 .services {
 	padding: 40px 0;
 }
 
 .services .row .col-container {
 	display: flex;
+	margin-bottom: 70px;
 }
 
 .services .row .col-container .col {
@@ -164,6 +171,26 @@ a {
 	font-weight: 600;
 	margin-bottom: 10px;
 }
+
+.about .see-work {
+	color: #fff;
+	margin: 0 auto;
+	width: 180px;
+	padding: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 2px solid var(--main-color);
+	background-color: var(--main-color);
+	transition: all 0.2s ease-in-out;
+}
+
+.about .see-work:hover {
+	background-color: #fff;
+	color: var(--main-color);
+	border-color: #fff;
+}
+
 
 .mind {
 	padding: 60px 30px;
