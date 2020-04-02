@@ -176,7 +176,7 @@ a {
 	color: #fff;
 	margin: 0 auto;
 	width: 180px;
-	padding: 8px;
+	padding: 10px 14px;
 	font-size: 18px;
 	font-weight: 600;
 	cursor: pointer;
@@ -186,9 +186,8 @@ a {
 }
 
 .about .see-work:hover {
-	background-color: #fff;
+	background-color: var(--light-gray);
 	color: var(--main-color);
-	border-color: #fff;
 }
 
 
