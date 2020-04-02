@@ -3,6 +3,7 @@
 	--max-width: 1400px;
 	--footer-bg: #191919;
 	--light-gray: #f5f5f5;
+	--container-width: 1200px;
 }
 
 * {
@@ -36,6 +37,8 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 40px;
+	max-width: var(--container-width);
+	margin: 0 auto;
 }
 
 .nav-container .logo img {
@@ -65,15 +68,16 @@ a {
 .hero {
 	height: 100vh;
 	width: 100%;
-	padding-top: 50px;
-	background-image: url("../includes/imgs/bg_test.png");
-	background-position: top right; /* Center the image */
-  	background-repeat: no-repeat; /* Do not repeat the image */
- 	background-size: 50% calc(100vh - 40px);
+	/*padding-top: 50px;*/
+	background: url("../includes/imgs/bg.svg") no-repeat;
+	background-position: top right;
+	background-size: auto 100%;
+  	/*background-repeat: no-repeat; */
+ 	/*background-size: 50% calc(100vh - 40px);*/
 }
 
 .hero-container {
-	max-width: 1100px;
+	max-width: var(--container-width);
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
