@@ -118,18 +118,18 @@ a {
 	color: var(--main-color);
 }
 
-.about {
+#about {
 	background-color: var(--light-gray);
 	padding: 60px 40px;
 	text-align: center;
 }
 
-.about h3 {
+#about h3 {
 	font-weight: 600;
 	font-size: 25px;
 }
 
-.about h3:after {
+#about h3:after {
 	content: '';
 	display: block;
 	margin: 15px auto 15px;
@@ -138,7 +138,7 @@ a {
 	background-color: var(--main-color);
 }
 
-.about p {
+#about p {
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -177,7 +177,7 @@ a {
 	margin-bottom: 10px;
 }
 
-.about .see-work {
+#about .see-work {
 	color: #fff;
 	margin: 0 auto;
 	width: 180px;
@@ -190,7 +190,7 @@ a {
 	transition: all 0.2s ease-in-out;
 }
 
-.about .see-work:hover {
+#about .see-work:hover {
 	background-color: var(--light-gray);
 	color: var(--main-color);
 }
@@ -223,17 +223,17 @@ a {
 	color: var(--main-color);
 }
 
-.portfolio {
+#portfolio {
 	text-align: center;
 	padding: 60px 40px;
 }
 
-.portfolio h3 {
+#portfolio h3 {
 	font-weight: 600;
 	font-size: 25px;
 }
 
-.portfolio h3:after {
+#portfolio h3:after {
 	content: '';
 	display: block;
 	margin: 15px auto 15px;
@@ -242,19 +242,19 @@ a {
 	background-color: var(--main-color);
 }
 
-.contact {
+#contact {
 	text-align: center;
 	padding: 60px 30px;
 	background-color: var(--light-gray);
 }
 
-.contact h3 {
+#contact h3 {
 	font-weight: 600;
 	font-size: 25px;
 	color: #111;
 }
 
-.contact h3:after {
+#contact h3:after {
 	content: '';
 	display: block;
 	margin: 15px auto 15px;
@@ -263,12 +263,12 @@ a {
 	background-color: var(--main-color);
 }
 
-.contact form {
+#contact form {
 	max-width: 400px;
 	margin: 20px auto 0;
 }
 
-.contact form input, .contact form textarea {
+#contact form input, #contact form textarea {
 	width: 100%;
 	display: block;
 	margin: 15px 0;
@@ -278,14 +278,14 @@ a {
 	border: none;
 }
 
-.contact form textarea {
+#contact form textarea {
 	height: 120px;
 	margin-bottom: 20px;
 	resize: vertical;
 	min-height: 120px;
 }
 
-.contact form .btn-submit {
+#contact form .btn-submit {
 	background-color: transparent;
 	color: #fff;
 	margin: 0 auto;
@@ -300,7 +300,7 @@ a {
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.contact form .btn-submit:hover {
+#contact form .btn-submit:hover {
 	background-color: #fff;
 	color: var(--main-color);
 }
