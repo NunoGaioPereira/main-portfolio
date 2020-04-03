@@ -87,7 +87,7 @@ a {
 }
 
 .hero-content {
-
+	padding-left: 40px;
 }
 
 .hero-content h1 {
@@ -149,14 +149,18 @@ a {
 
 .services .row .col-container {
 	display: flex;
+	flex-wrap: wrap;
 	/*margin-bottom: 70px;*/
+	justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .services .row .col-container .col {
 	/*padding: 0 14px;*/
-	/*flex-basis: 33%;*/
-	padding: 40px 10px;
-	margin: 0 10px;
+	max-width: 30%;
+	padding: 40px 20px;
+	margin: 0 10px 30px;
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -269,6 +273,7 @@ a {
 	display: block;
 	margin: 15px 0;
 	padding: 14px 10px;
+	font-family: 'Montserrat', sans-serif;
 	/*border: 2px solid #ccc;*/
 	border: none;
 }
@@ -276,6 +281,8 @@ a {
 .contact form textarea {
 	height: 120px;
 	margin-bottom: 20px;
+	resize: vertical;
+	min-height: 120px;
 }
 
 .contact form .btn-submit {
@@ -384,6 +391,20 @@ footer .footer-content ul li a img {
 
 @media screen and (max-width: 900px) {
 	.services .row .col-container {
+		/*flex-direction: column;*/
+	}
+
+	.services .row .col-container .col {
+		/*flex-direction: row;*/
+		/*align-items: center;*/
+		/*flex: 0 0 100%;*/
+		max-width: 46%;
+		/*margin: 10px 0;*/
+	}	
+}
+
+@media screen and (max-width: 640px) {
+	.services .row .col-container {
 		flex-direction: column;
 	}
 
@@ -391,11 +412,12 @@ footer .footer-content ul li a img {
 		flex-direction: row;
 		align-items: center;
 		flex: 0 0 100%;
-		margin: 10px 0;
+		max-width: 100%;
+		margin: 15px 0;
 	}	
 
 	.services .row .col-container .col .svg img {
-		margin-bottom: 0;
+		margin: 0 20px 0;
 	}
 
 	.services .row .col-container .col .text {
