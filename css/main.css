@@ -9,6 +9,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -148,7 +149,7 @@ a {
 
 .services .row .col-container {
 	display: flex;
-	margin-bottom: 70px;
+	/*margin-bottom: 70px;*/
 }
 
 .services .row .col-container .col {
