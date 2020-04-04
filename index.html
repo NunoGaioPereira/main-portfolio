@@ -28,9 +28,11 @@
 			<div class="hero-content">
 				<h1>Designer and Developer</h1>
 				<h2>Graphic Design and Web Development, the mind of an artist, the skill of a craftsmanship developer</h2>
-				<a href="">Read More</a>
+				<a href="">Find More</a>
 			</div>
 		</div>
+		<!-- <img class="hero-img" src="./includes/imgs/test_bg.png"> -->
+		<img class="hero-img" src="./includes/imgs/test_bg.jpg">
 	</section>
 
 	<section id="about">
@@ -75,7 +77,7 @@
 		tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
-					<div class="col">
+					<!--<div class="col">
 						<div class="svg">
 							<img src="./includes/imgs/branding.png">
 						</div>
@@ -104,7 +106,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<!-- <a href="" class="see-work">See my work</a> -->
@@ -122,30 +124,30 @@
 		<h3>Portfolio</h3>
 		<p>See some of my latest work to get inspired!</p>
 		<ul>
-			<li><a href="#/" class="active">All</a></li>
-			<li><a href="#/">Web</a></li>
-			<li><a href="#/">Illustration</a></li>
+			<li><a href="#/" class="active" onclick="filterSelection('all')">All</a></li>
+			<li><a href="#/" onclick="filterSelection('web')">Web</a></li>
+			<li><a href="#/" onclick="filterSelection('illustration')">Illustration</a></li>
 		</ul>
 		<div class="gallery">
-			<a href="">
+			<a href="" class="web work">
 				<img src="./includes/imgs/img3.png">
 			</a>
-			<a href="">
+			<a href="" class="work">
 				<img src="./includes/imgs/img2.png">
 			</a>
-			<a href="">
+			<a href="" class="work illustration">
 				<img src="./includes/imgs/img3.png">
 			</a>
-			<a href="">
+			<a href="" class="web work">
 				<img src="./includes/imgs/img2.png">
 			</a>
-			<a href="">
+			<a href="" class="work">
 				<img src="./includes/imgs/img3.png">
 			</a>
-			<a href="">
+			<a href="" class="work">
 				<img src="./includes/imgs/img2.png">
 			</a>
-			<a href="">
+			<a href="" class="work">
 				<img src="./includes/imgs/img3.png">
 			</a>
 		</div>
@@ -175,9 +177,53 @@
 	</footer>
 
 	<script> 
+
+		filterSelection("all");
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("work");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+		    w3RemoveClass(x[i], "show");
+		    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+		    while (arr1.indexOf(arr2[i]) > -1) {
+		      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		    }
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.querySelector("#portfolio ul");
+		var btns = btnContainer.getElementsByClassName("li a");
+		console.log(btns);
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+		    var current = document.getElementsByClassName("active");
+		    current[0].className = current[0].className.replace(" active", "");
+		    this.className += " active";
+		  });
+		}
+
 		const nav = document.querySelector('.top-nav');
 		const links = document.querySelectorAll('.links');
-		console.log(links);
 		window.addEventListener('scroll', () => {
 		  // let y = 1 + (window.scrollY || window.pageYOffset) / 150
 		  // y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
@@ -193,6 +239,9 @@
 		  else if(y < 100) {
 		  	nav.style.backgroundColor = "transparent";
 		  	nav.style.boxShadow = "initial";
+		  	for (var i=0; i < links.length; i++) {
+			    links[i].setAttribute("style", "color: var(--main-color)");
+			}
 		  	// links.style.color = '#fff';
 		  }
 		})
