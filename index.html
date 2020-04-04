@@ -9,6 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div id="side-nav">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</div>
 	<nav class="top-nav">
 		<div class="container">
 			<div class="nav-container">
@@ -19,7 +25,7 @@
 					<li><a href="./index.html#portfolio" class="links">Portfolio</a></li>
 					<li><a href="./index.html#contact" class="links">Contact</a></li>
 				</ul>
-				<div class="hamb"><img src="./includes/imgs/hamb_gray.png"></div>
+				<div class="hamb"><img id="btn-hamb" src="./includes/imgs/hamb_gray.png"></div>
 			</div>
 		</div>
 	</nav>
@@ -158,7 +164,7 @@
 
 	<section id="contact">
 		<h3>Contact me</h3>
-		<form>
+		<form method="POST">
 			<input type="text" name="name" placeholder="Name">
 			<input type="email" name="email" placeholder="Email">
 			<textarea placeholder="Your message"></textarea>
@@ -214,7 +220,6 @@
 		// Add active class to the current button (highlight it)
 		var btnContainer = document.querySelector("#portfolio ul");
 		var btns = btnContainer.getElementsByClassName("li a");
-		console.log(btns);
 		for (var i = 0; i < btns.length; i++) {
 		  btns[i].addEventListener("click", function(){
 		    var current = document.getElementsByClassName("active");
@@ -234,18 +239,23 @@
 		  	nav.style.boxShadow = "0 0 10px 0 rgba(0, 0, 0, 0.2)";
 		  	// links.style.color = '#191919';
 		  	for (var i=0; i < links.length; i++) {
-			    links[i].setAttribute("style", "color: #191919");
+			    // links[i].setAttribute("style", "color: #191919");
 			}
 		  }
 		  else if(y < 100) {
 		  	nav.style.backgroundColor = "transparent";
 		  	nav.style.boxShadow = "initial";
 		  	for (var i=0; i < links.length; i++) {
-			    links[i].setAttribute("style", "color: var(--main-color)");
+			    // links[i].setAttribute("style", "color: var(--main-color)");
 			}
 		  	// links.style.color = '#fff';
 		  }
 		})
+
+		var btnContainer = document.getElementById("btn-hamb");
+		btnContainer.addEventListener('click', function(){
+			document.getElementById("side-nav").classList.toggle('open');
+		});
 	</script>
 </body>
 </html>
