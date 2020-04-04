@@ -199,6 +199,7 @@ a {
 	width: 160px;
 	border-radius: 50%;
 	margin-bottom: 20px;
+	/*border: 4px solid var(--main-color);*/
 }
 
 .mind {
@@ -275,6 +276,27 @@ a {
 	background-color: var(--main-color);
 	color: #fff;
 }
+
+#portfolio .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1000px;
+	justify-content: center;
+}
+
+#portfolio .gallery a {
+	flex: 33%;
+	max-width: 33%;
+	height: 100%;
+	overflow: hidden;
+	font-size: 0;
+}
+
+#portfolio .gallery a img {
+	width: 100%;
+}
+
 
 #contact {
 	text-align: center;
@@ -396,6 +418,11 @@ footer .footer-content ul li a img {
 }
 
 @media screen and (max-width: 700px) {
+	#portfolio .gallery a {
+		flex: 50%;
+		max-width: 50%;
+	}
+
 	footer .footer-content {
 		display: flex;
 		flex-direction: column;
@@ -443,18 +470,25 @@ footer .footer-content ul li a img {
 	}
 
 	.services .row .col-container .col {
-		flex-direction: row;
+		/*flex-direction: row;
 		align-items: center;
-		flex: 0 0 100%;
+		flex: 0 0 100%;*/
 		max-width: 100%;
-		margin: 15px 0;
+		/*margin: 15px 0;*/
 	}	
 
 	.services .row .col-container .col .svg img {
-		margin: 0 20px 0;
+		/*margin: 0 20px 0;*/
 	}
 
 	.services .row .col-container .col .text {
-		text-align: left;
+		/*text-align: left;*/
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#portfolio .gallery a {
+		flex: 100%;
+		max-width: 100%;
 	}
 }
