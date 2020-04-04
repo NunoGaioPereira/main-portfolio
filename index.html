@@ -10,6 +10,10 @@
 </head>
 <body>
 	<div id="side-nav">
+		<div class="header">
+			<h3>Menu</h3>
+			<img id="close-nav" src="./includes/imgs/cross.png">
+		</div>
 		<ul>
 			<li><a href="">Home</a></li>
 			<li><a href="">About</a></li>
@@ -254,6 +258,10 @@
 
 		var btnContainer = document.getElementById("btn-hamb");
 		btnContainer.addEventListener('click', function(){
+			document.getElementById("side-nav").classList.toggle('open');
+		});
+		var closeNav = document.getElementById("close-nav");
+		closeNav.addEventListener('click', function(){
 			document.getElementById("side-nav").classList.toggle('open');
 		});
 	</script>
