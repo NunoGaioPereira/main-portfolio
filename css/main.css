@@ -126,7 +126,7 @@ a {
 
 #about h3 {
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 28px;
 }
 
 #about h3:after {
@@ -195,6 +195,11 @@ a {
 	color: var(--main-color);
 }
 
+#about .thumb {
+	width: 160px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
 
 .mind {
 	padding: 60px 30px;
@@ -230,7 +235,7 @@ a {
 
 #portfolio h3 {
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 28px;
 }
 
 #portfolio h3:after {
@@ -242,16 +247,16 @@ a {
 	background-color: var(--main-color);
 }
 
-#portfolio .gallery ul {
+#portfolio ul {
 	list-style: none;
 	margin: 30px 0;
 }
 
-#portfolio .gallery ul li {
+#portfolio ul li {
 	display: inline-block;
 }
 
-#portfolio .gallery ul li a {
+#portfolio ul li a {
 	color: #191919;
 	margin: 0 10px;
 	border-radius: 1.5em;
@@ -261,12 +266,12 @@ a {
 	transition: all 0.2s ease-in-out;
 }
 
-#portfolio .gallery ul li a.active {
+#portfolio ul li a.active {
 	background-color: var(--main-color);
 	color: #fff;
 }
 
-#portfolio .gallery ul li a:hover {
+#portfolio ul li a:hover {
 	background-color: var(--main-color);
 	color: #fff;
 }
@@ -279,7 +284,7 @@ a {
 
 #contact h3 {
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 28px;
 	color: #111;
 }
 
@@ -293,7 +298,7 @@ a {
 }
 
 #contact form {
-	max-width: 400px;
+	max-width: 450px;
 	margin: 20px auto 0;
 }
 
@@ -308,10 +313,10 @@ a {
 }
 
 #contact form textarea {
-	height: 120px;
+	height: 150px;
 	margin-bottom: 20px;
 	resize: vertical;
-	min-height: 120px;
+	min-height: 150px;
 }
 
 #contact form .btn-submit {
