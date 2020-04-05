@@ -166,21 +166,36 @@
 	<section id="testimonials">
 		<h3>Testimonials</h3>
 		<div class="slider">
+			<div class="slider-container">
+				<div class="slide"></div>
+			</div>
+		</div>
+		<!--<div class="slider">
 			<img src="./includes/imgs/arrow-left-round.png" id="arrow-left">
-			<div class="slide">
-				<div class="quote"><img src="./includes/imgs/quote.png"></div>
-				<div class="text">
-					<p>"Nuno is a fantastic professional. He always deliver on time and with great results."</p>
-					<p>- Johnathan Dove, The Wire</p>
+			<div id="slide-container">
+				<div class="slide">
+					<div class="quote"><img src="./includes/imgs/quote.png"></div>
+					<div class="text">
+						<p>"Nuno is a fantastic professional. He always deliver on time and with great results."</p>
+						<p>- Johnathan Dove, The Wire</p>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="quote"><img src="./includes/imgs/quote.png"></div>
+					<div class="text">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua."</p>
+						<p>- Johnathan Dove, The Wire</p>
+					</div>
 				</div>
 			</div>
 			<img src="./includes/imgs/arrow-right-round.png" id="arrow-right">
 		</div>
-		<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+		<ul id="slider-nav">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>-->
 	</section>
 
 	<section id="contact">
@@ -290,6 +305,51 @@
 			document.getElementById("cover").classList.toggle('open');
 		});
 
+
+		/*var imgCounter = document.getElementById('slide-container').getElementsByClassName('slide').length - 1;
+		console.log(imgCounter);
+		// console.log(imgCounter.getElementsByClassName('slide').length);
+		var test = document.getElementById('slide-container').children;
+		var imgPos = 0;
+		sliderVisibility();
+
+		function sliderVisibility() {
+			console.log(imgPos);
+			for(var i = 0; i <= imgCounter; i++) {
+				// console.log(test[i]);
+				if(imgPos != i) {
+					test[i].setAttribute("style", "display: none");
+				}
+				else {
+					test[i].setAttribute("style", "display: block");	
+				}
+			}
+		}
+
+		let right_arrow = document.getElementById('arrow-right');
+		right_arrow.addEventListener('click', function(){
+			// console.log('right');
+			if(imgPos != imgCounter) {
+				imgPos++;
+				sliderVisibility();
+			}
+			else {
+				imgPos = 0;
+				sliderVisibility();
+			}
+		});
+
+		let left_arrow = document.getElementById('arrow-left');
+		left_arrow.addEventListener('click', function(){
+			if(imgPos == 0) {
+				imgPos = imgCounter;
+				sliderVisibility();
+			}
+			else {
+				imgPos--;
+				sliderVisibility();
+			}
+		});*/
 	</script>
 </body>
 </html>
