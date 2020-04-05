@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div id="cover"></div>
 	<div id="side-nav">
 		<div class="header">
 			<h3>Menu</h3>
@@ -165,6 +166,7 @@
 	<section id="testimonials">
 		<h3>Testimonials</h3>
 		<div class="slider">
+			<img src="./includes/imgs/arrow-left-round.png" id="arrow-left">
 			<div class="slide">
 				<div class="quote"><img src="./includes/imgs/quote.png"></div>
 				<div class="text">
@@ -172,12 +174,13 @@
 					<p>- Johnathan Dove, The Wire</p>
 				</div>
 			</div>
-			<ul>
+			<img src="./includes/imgs/arrow-right-round.png" id="arrow-right">
+		</div>
+		<ul>
 				<li></li>
 				<li></li>
 				<li></li>
 			</ul>
-		</div>
 	</section>
 
 	<section id="contact">
@@ -274,11 +277,19 @@
 		var btnContainer = document.getElementById("btn-hamb");
 		btnContainer.addEventListener('click', function(){
 			document.getElementById("side-nav").classList.toggle('open');
+			document.getElementById("cover").classList.toggle('open');
 		});
 		var closeNav = document.getElementById("close-nav");
 		closeNav.addEventListener('click', function(){
 			document.getElementById("side-nav").classList.toggle('open');
+			document.getElementById("cover").classList.toggle('open');
 		});
+		var cover = document.getElementById("cover");
+		cover.addEventListener('click', function(){
+			document.getElementById("side-nav").classList.toggle('open');
+			document.getElementById("cover").classList.toggle('open');
+		});
+
 	</script>
 </body>
 </html>
