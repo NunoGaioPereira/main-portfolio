@@ -436,6 +436,31 @@ a {
 	/*text-align: center;*/
 }
 
+#testimonials .slider ul {
+	list-style: none;
+	margin-top: 30px;
+}
+
+#testimonials .slider ul li {
+	display: inline-block;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+#testimonials .slider ul li:before {
+	content: '';
+	width: 13px;
+	height: 13px;
+	border: 3px solid #999;
+	border-radius: 50%;
+	background-color: #999;
+	display: block;
+}
+
+#testimonials .slider ul li:nth-child(3):before, #testimonials .slider ul li:nth-child(2):before {
+	background-color: transparent;
+}
+
 #testimonials .slider .slide {
 	background-color: #fff;
 	padding: 60px 40px 40px;
@@ -458,7 +483,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	border-radius: 35px;
-	box-shadow: 0 8px 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 
