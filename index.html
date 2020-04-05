@@ -39,11 +39,12 @@
 			<div class="hero-content">
 				<h1>Designer and Developer</h1>
 				<h2>Graphic Design and Web Development, the mind of an artist, the skill of a craftsmanship developer</h2>
-				<a href="">Find More</a>
+				<a href="#about">Find More</a>
 			</div>
 		</div>
 		<!-- <img class="hero-img" src="./includes/imgs/test_bg.png"> -->
-		<img class="hero-img" src="./includes/imgs/test_bg.jpg">
+		<!-- <img class="hero-img" src="./includes/imgs/test_bg.jpg"> -->
+		<img class="hero-img" src="./includes/imgs/bg_top.png">
 	</section>
 
 	<section id="about">
@@ -133,15 +134,15 @@
 
 	<section id="portfolio">
 		<h3>Portfolio</h3>
-		<p>See some of my latest work to get inspired!</p>
-		<ul>
-			<li><a href="#/" class="active" onclick="filterSelection('all')">All</a></li>
-			<li><a href="#/" onclick="filterSelection('web')">Web</a></li>
-			<li><a href="#/" onclick="filterSelection('illustration')">Illustration</a></li>
+		<!-- <p>See some of my latest work to get inspired!</p> -->
+		<ul class="portfolio-nav">
+			<li><a href="#/" class="test active" onclick="filterSelection('all')">See all</a></li>
+			<li><a href="#/" class="test" onclick="filterSelection('web')">Web Design</a></li>
+			<li><a href="#/" class="test" onclick="filterSelection('illustration')">Illustration</a></li>
 		</ul>
 		<div class="gallery">
 			<a href="" class="web work">
-				<img src="./includes/imgs/img3.png">
+				<img src="./includes/imgs/p1.png">
 			</a>
 			<a href="" class="work">
 				<img src="./includes/imgs/img2.png">
@@ -158,13 +159,21 @@
 			<a href="" class="work">
 				<img src="./includes/imgs/img2.png">
 			</a>
-			<a href="" class="work">
-				<img src="./includes/imgs/img3.png">
-			</a>
 		</div>
 		<a href="">Contact me</a>
 	</section>
-
+	<section id="testimonials">
+		<h3>Testimonials</h3>
+		<div class="slider">
+			<div class="slide">
+				<div class="quote"><img src="./includes/imgs/quote.png"></div>
+				<div class="text">
+					<p>"Nuno is a fantastic professional. He always deliver on time and with great results."</p>
+					<p>- Johnathan Dove, The Wire</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section id="contact">
 		<h3>Contact me</h3>
@@ -222,8 +231,9 @@
 		}
 
 		// Add active class to the current button (highlight it)
-		var btnContainer = document.querySelector("#portfolio ul");
-		var btns = btnContainer.getElementsByClassName("li a");
+		var btnContainer = document.querySelector(".portfolio-nav");
+		var btns = document.getElementsByClassName("test");
+		console.log(btns);
 		for (var i = 0; i < btns.length; i++) {
 		  btns[i].addEventListener("click", function(){
 		    var current = document.getElementsByClassName("active");
