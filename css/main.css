@@ -813,3 +813,31 @@ footer .footer-content ul li a img {
 	margin-top: 55px;
 	text-align: center;
 }
+
+.project-body {
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px 30px;
+	max-width: 850px;
+}
+
+.project-gallery {
+	/*max-width: 850px;*/
+	margin: 40px auto;
+}
+
+.project-intro {
+	width: 100%;
+}
+
+.project-description {
+	/*max-width: 850px;*/
+	/*margin: 0 auto;*/
+	text-align: left;
+}
+
+.project-description .title {
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 18px;
+}
