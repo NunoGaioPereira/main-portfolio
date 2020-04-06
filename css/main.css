@@ -803,3 +803,13 @@ footer .footer-content ul li a img {
 		max-width: 100%;
 	}
 }
+
+
+/* --- PROJECT  --- */
+.project-header {
+	background-color: #191919;
+	color: #fff;
+	padding: 80px 30px;
+	margin-top: 55px;
+	text-align: center;
+}
